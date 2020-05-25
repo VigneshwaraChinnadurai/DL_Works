@@ -8,4 +8,6 @@ Due to mustache, I've set the scale factor to 1.75 in the below line. try changi
 
 #smile = smile_Cascade.detectMultiScale(roi_gray,scaleFactor= 1.75,minNeighbors=35,minSize=(25, 25),flags=cv2.CASCADE_SCALE_IMAGE)
 
+Included 2 snapshot with scaleFactor as 1.25(28.png) and 1.75(29.png)
+
 Happy coding.
