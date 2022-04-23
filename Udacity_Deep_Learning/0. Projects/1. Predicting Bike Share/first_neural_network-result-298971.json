@@ -1,0 +1,132 @@
+{
+    "tests": [
+        {
+            "rubric_item_id": 5578,
+            "traceback": "Traceback (most recent call last):\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 102, in backpropagation\n    delta_weights_i_h += None\nTypeError: ufunc 'add' output (typecode 'O') could not be coerced to provided output parameter (typecode 'd') according to the casting rule ''same_kind''\n",
+            "description": "The backpropagation implementation is correct",
+            "result": "E"
+        },
+        {
+            "rubric_item_id": 5572,
+            "traceback": "TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'\n",
+            "description": "The forward pass implementation is correct",
+            "result": "E"
+        },
+        {
+            "rubric_item_id": 7965,
+            "traceback": "Traceback (most recent call last):\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 52, in train\n    delta_weights_i_h, delta_weights_h_o)\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 102, in backpropagation\n    delta_weights_i_h += None\nTypeError: ufunc 'add' output (typecode 'O') could not be coerced to provided output parameter (typecode 'd') according to the casting rule ''same_kind''\n",
+            "description": "Produces good results when running the network on full data",
+            "result": "E"
+        },
+        {
+            "rubric_item_id": 5573,
+            "traceback": "TypeError: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''\n",
+            "description": "The run method is correct",
+            "result": "E"
+        },
+        {
+            "rubric_item_id": 5570,
+            "traceback": "Traceback (most recent call last):\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 52, in train\n    delta_weights_i_h, delta_weights_h_o)\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 102, in backpropagation\n    delta_weights_i_h += None\nTypeError: ufunc 'add' output (typecode 'O') could not be coerced to provided output parameter (typecode 'd') according to the casting rule ''same_kind''\n",
+            "description": "The weights are updated correctly on training",
+            "result": "E"
+        },
+        {
+            "rubric_item_id": 5580,
+            "traceback": "Traceback (most recent call last):\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 117, in update_weights\n    self.weights_hidden_to_output += None # update hidden-to-output weights with gradient descent step\nTypeError: ufunc 'add' output (typecode 'O') could not be coerced to provided output parameter (typecode 'd') according to the casting rule ''same_kind''\n",
+            "description": "The update_weights implementation is correct",
+            "result": "E"
+        },
+        {
+            "rubric_item_id": 5574,
+            "traceback": "AssertionError: False is not true\n",
+            "description": "The activation function is a sigmoid",
+            "result": "F"
+        },
+        {
+            "rubric_item_id": 5581,
+            "traceback": "AssertionError: False is not true\n",
+            "description": "The number of hidden nodes is reasonable",
+            "result": "F"
+        },
+        {
+            "rubric_item_id": 5575,
+            "traceback": "",
+            "description": "The number of epochs is reasonable",
+            "result": "."
+        },
+        {
+            "rubric_item_id": 5582,
+            "traceback": "",
+            "description": "The learning_rate is reasonable",
+            "result": "."
+        },
+        {
+            "rubric_item_id": 7964,
+            "traceback": "",
+            "description": "The number of output nodes is correct",
+            "result": "."
+        }
+    ],
+    "critiques": {
+        "700": {
+            "general_comment": null,
+            "rubric_items": {
+                "5570": {
+                    "autograded": false,
+                    "result": "failed",
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: The weights are updated correctly on training\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 52, in train\n    delta_weights_i_h, delta_weights_h_o)\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 102, in backpropagation\n    delta_weights_i_h += None\nTypeError: ufunc 'add' output (typecode 'O') could not be coerced to provided output parameter (typecode 'd') according to the casting rule ''same_kind''\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nThe weights are updated correctly on training                          E\n\n\n```"
+                },
+                "5572": {
+                    "autograded": false,
+                    "result": "failed",
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: The forward pass implementation is correct\n----------------------------------------------------------------------\nTypeError: unsupported operand type(s) for -: 'float' and 'NoneType'\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nThe forward pass implementation is correct                             E\n\n\n```"
+                },
+                "5573": {
+                    "autograded": false,
+                    "result": "failed",
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: The run method is correct\n----------------------------------------------------------------------\nTypeError: ufunc 'isfinite' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nThe run method is correct                                              E\n\n\n```"
+                },
+                "5574": {
+                    "autograded": false,
+                    "result": "failed",
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: The activation function is a sigmoid\n----------------------------------------------------------------------\nAssertionError: False is not true\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nThe activation function is a sigmoid                                   F\n\n\n```"
+                },
+                "5575": {
+                    "autograded": false,
+                    "result": "passed",
+                    "observation": "Correct!"
+                },
+                "5578": {
+                    "autograded": false,
+                    "result": "failed",
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: The backpropagation implementation is correct\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 102, in backpropagation\n    delta_weights_i_h += None\nTypeError: ufunc 'add' output (typecode 'O') could not be coerced to provided output parameter (typecode 'd') according to the casting rule ''same_kind''\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nThe backpropagation implementation is correct                          E\n\n\n```"
+                },
+                "5580": {
+                    "autograded": false,
+                    "result": "failed",
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: The update_weights implementation is correct\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 117, in update_weights\n    self.weights_hidden_to_output += None # update hidden-to-output weights with gradient descent step\nTypeError: ufunc 'add' output (typecode 'O') could not be coerced to provided output parameter (typecode 'd') according to the casting rule ''same_kind''\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nThe update_weights implementation is correct                           E\n\n\n```"
+                },
+                "5581": {
+                    "autograded": false,
+                    "result": "failed",
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: The number of hidden nodes is reasonable\n----------------------------------------------------------------------\nAssertionError: False is not true\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nThe number of hidden nodes is reasonable                               F\n\n\n```"
+                },
+                "5582": {
+                    "autograded": false,
+                    "result": "passed",
+                    "observation": "Correct!"
+                },
+                "7964": {
+                    "autograded": false,
+                    "result": "passed",
+                    "observation": "Correct!"
+                },
+                "7965": {
+                    "autograded": false,
+                    "result": "failed",
+                    "observation": "```\nNot all of the tests passed.\n\n\n************************************************************************\n                         Test Failure Feedback                          \n************************************************************************\n\nFailed Test: Produces good results when running the network on full data\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 52, in train\n    delta_weights_i_h, delta_weights_h_o)\n  File \"/home/grader/first_neural_network/workspace/my_answers.py\", line 102, in backpropagation\n    delta_weights_i_h += None\nTypeError: ufunc 'add' output (typecode 'O') could not be coerced to provided output parameter (typecode 'd') according to the casting rule ''same_kind''\n\n\n************************************************************************\n                          Test Result Summary                           \n************************************************************************\n\nProduces good results when running the network on full data            E\n\n\n```"
+                }
+            }
+        }
+    }
+}
