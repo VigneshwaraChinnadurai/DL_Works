@@ -1,0 +1,10 @@
+iGAN: https://github.com/junyanz/iGAN/blob/master/README.md
+
+HRGAN: https://tcwang0509.github.io/pix2pixHD/
+
+Pix2Pix and cycle GAN: https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+
+Nvidia HR GAN: https://github.com/NVIDIA/pix2pixHD
+
+StarGAN: https://github.com/yunjey/StarGAN
+
